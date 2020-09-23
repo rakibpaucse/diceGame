@@ -38,7 +38,7 @@ var panel_1 = document.querySelector('.player-1-panel');
 
 
 btn_new.addEventListener('click',function(){
-    
+    document.querySelector('.final_score').value = null
     location.reload();
 });
 
@@ -66,6 +66,7 @@ dice.style.display = 'none';
 
 btn_done.addEventListener('click',function(){
      playNumber = document.querySelector('.final_score').value;
+     btn_done.style.color = 'red'
 
 });
 
